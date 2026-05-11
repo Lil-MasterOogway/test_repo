@@ -61,6 +61,38 @@ namespace test
                 }
             }
             Console.ReadLine();
+
+
+            /*
+             * Jane 
+             */
+
+            string word;
+            int lower = 0, upper = 0, other = 0;
+            char text;
+            Console.WriteLine("Type anything you want.");
+            word = Console.ReadLine();
+
+
+            foreach (char c in word)
+            {
+                if ((c >= 'a') && (c <= 'z'))
+                {
+                    lower++;
+                }
+                else if ((c >= 'A') && (c <= 'Z'))
+                {
+                    upper++;
+                }
+                else
+                {
+                    other++;
+                }
+
+            }
+            Console.WriteLine($"So, you got {upper} uppercase, {lower} lowercase, and {other} other characters.");
+            Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
