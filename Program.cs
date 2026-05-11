@@ -94,6 +94,48 @@ namespace test
             Console.WriteLine($"So, you got {upper} uppercase, {lower} lowercase, and {other} other characters.");
             Console.WriteLine();
             Console.ReadLine();
+
+            /* Chan 
+             */
+
+            int dice, count = 0, count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0;
+            Random random = new Random();
+            for (count = 1; count <= 6000; count++)
+            {
+                dice = random.Next(1, 7);
+
+                if (dice == 1)
+                {
+                    count1++;
+
+                }
+                else if (dice == 2)
+                {
+                    count2++;
+                }
+                else if (dice == 3)
+                {
+                    count3++;
+                }
+                else if (dice == 4)
+                {
+                    count4++;
+                }
+                else if (dice == 5)
+                {
+                    count5++;
+                }
+                else
+                {
+                    count6++;
+                }
+            }
+            Console.WriteLine("  --------------------------------------");
+            Console.WriteLine("  |  1  |  2  |  3  |  4  |  5  |  6  |");
+            Console.WriteLine($"  | {count1} | {count2} | {count3} | {count4} | {count5} | {count6} | ");
+            Console.WriteLine("  --------------------------------------");
+            Console.WriteLine();
+            Console.ReadLine();
         }
     }
 }
